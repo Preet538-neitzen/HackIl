@@ -61,10 +61,6 @@ class Leaderboard extends Component {
 
 
 	render() {
-		// var campers = this.props.data.map(function(camper) {
-		// 	return <Camper />;
-		// });
-		// {campers}
 		return(
 
 		<div>
@@ -73,7 +69,7 @@ class Leaderboard extends Component {
           Name:
           <input type="text" value={this.state.value} onChange={this.handleChange} />
         </label>
-        <input type="submit" value="Submit" />
+        {/* <input type="submit" value="Submit" /> */}
       </form>
 			
 		<table className="Leaderboard">
@@ -99,15 +95,5 @@ class Leaderboard extends Component {
 	}
 }
 
-class Camper extends Component {
-	render() {
-		return <tr>
-			<td className="number"></td>
-			<td className="name"></td>
-			<td className="points30"></td>
-			<td className="pointsAll"></td>
-		</tr>
-	}
-}
 
 export default App;
